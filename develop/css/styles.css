@@ -153,6 +153,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  .faq {
+    min-height: 29.188rem;
+    width: 62.5rem;
+  }
+}
+
 /* images */
 .faq__image-woman {
   position: absolute;
@@ -160,16 +167,24 @@ body {
   left: 2.6875rem;
 
   width: 12.5rem;
-  height: 12.5rem;
+  z-index: 10;
 }
 
 @media only screen and (min-width: 48em) {
   .faq__image-woman {
-    top: 59px;
-    left: -56px;
+    top: 3.6875rem;
+    left: -3.5rem;
 
     width: 24rem;
-    height: 24rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .faq__image-woman {
+    top: 2.688rem;
+    left: -5.2rem;
+
+    width: 29rem;
   }
 }
 
@@ -178,16 +193,23 @@ body {
   top: 0.063rem;
   left: 2.75rem;
   width: 12.5rem;
-  height: 12.5rem;
 }
 
 @media only screen and (min-width: 48em) {
   .faq__image-shadow {
-    top: -168px;
-    left: -353px;
+    top: -10.5rem;
+    left: -22.0625rem;
 
     width: 42rem;
-    height: 42rem;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .faq__image-shadow {
+    top: -8.5rem;
+    left: -19.062rem;
+
+    width: 42rem;
   }
 }
 
@@ -195,10 +217,19 @@ body {
 @media only screen and (min-width: 48em) {
   .faq__content {
     position: absolute;
-    top: 28px;
-    right: 85px;
+    top: 1.75rem;
+    right: 5.3125rem;
 
-    width: 250px;
+    width: 15.625rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .faq__content {
+    top: 28px;
+    right: 154px;
+
+    width: 400px;
   }
 }
 
@@ -212,6 +243,13 @@ body {
 
 @media only screen and (min-width: 48em) {
   .faq__header {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .faq__header {
+    font-size: 2.375rem;
   }
 }
 
@@ -231,7 +269,7 @@ body {
 
 @media only screen and (min-width: 48em) {
   .faq__qna {
-    width: 18.75rem;
+    min-width: 18.75rem;
   }
 }
 
@@ -242,6 +280,12 @@ body {
 @media only screen and (min-width: 48em) {
   :root {
     --fs-default: 0.9375rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  :root {
+    --fs-default: 1.25rem;
   }
 }
 
@@ -276,5 +320,11 @@ body {
 @media only screen and (min-width: 48em) {
   .answer {
     font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .answer {
+    font-size: 15px;
   }
 }
