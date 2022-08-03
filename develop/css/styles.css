@@ -313,10 +313,6 @@ body {
   font-size: 0.6875rem;
 }
 
-/* .faq__qna:hover .answer {
-  display: block !important;
-} */
-
 @media only screen and (min-width: 48em) {
   .answer {
     font-size: 13px;
