@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -12,9 +11,16 @@
       href="./develop/images/favicon-32x32.png"
     />
 
+    <!-- Google Fonts -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./develop/css/styles.css" />
+
+    <!-- Custom JS -->
+    <script src="./develop/js/script.js" defer></script>
+
     <title>Frontend Mentor | FAQ Accordion Card</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -26,21 +32,132 @@
     </style>
   </head>
   <body>
-    How many team members can I invite? You can invite up to 2 additional users
-    on the Free plan. There is no limit on team members for the Premium plan.
-    What is the maximum file upload size? No more than 2GB. All files in your
-    account must fit your allotted storage space. How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your
-    profile page. A reset link will be emailed to you. Can I cancel my
-    subscription? Yes! Send us a message and we’ll process your request no
-    questions asked. Do you provide additional support? Chat and email support
-    is available 24/7. Phone lines are open during normal business hours.
+    <main class="main">
+      <section class="faq">
+        <!-- image of woman -->
+        <div class="faq__image-woman">
+          <picture>
+            <source
+              srcset="./develop/images/illustration-woman-online-desktop.svg"
+              media="(min-width: 48em)"
+            />
+            <source
+              srcset="./develop/images/illustration-woman-online-mobile.svg"
+              media="(min-width: 23.4375em)"
+            />
+            <img
+              src="./develop/images/illustration-woman-online-mobile.svg"
+              alt="illustration of a woman working online"
+            />
+          </picture>
+        </div>
+
+        <!-- image of bg shadow -->
+        <div class="faq__image-shadow">
+          <picture>
+            <source
+              srcset="./develop/images/bg-pattern-desktop.svg"
+              media="(min-width: 48em)"
+            />
+            <source
+              srcset="./develop/images/bg-pattern-mobile.svg"
+              media="(min-width: 23.4375em)"
+            />
+            <img
+              src="./develop/images/bg-pattern-mobile.svg"
+              alt="illustration of a woman working online"
+            />
+          </picture>
+        </div>
+
+        <!-- header -->
+        <h1 class="faq__header">FAQ</h1>
+
+        <!-- questions & answers -->
+        <div class="faq__qna-box">
+          <!-- question 1 -->
+          <div class="faq__qna faq__qna--1">
+            <p class="question">How many team members can I invite?</p>
+            <div class="icon-arrow-down">
+              <img
+                src="./develop/images/icon-arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </div>
+            <p class="answer">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <!-- question 2 -->
+          <div class="faq__qna faq__qna--2">
+            <p class="question">What is the maximum file upload size?</p>
+            <div class="icon-arrow-down">
+              <img
+                src="./develop/images/icon-arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </div>
+            <p class="answer">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space..
+            </p>
+          </div>
+
+          <!-- question 3 -->
+          <div class="faq__qna faq__qna--3">
+            <p class="question">How do I reset my password?</p>
+            <div class="icon-arrow-down">
+              <img
+                src="./develop/images/icon-arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </div>
+            <p class="answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+
+          <!-- question 4 -->
+          <div class="faq__qna faq__qna--4">
+            <p class="question">Can I cancel my subscription?</p>
+            <div class="icon-arrow-down">
+              <img
+                src="./develop/images/icon-arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </div>
+            <p class="answer">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+
+          <!-- question 5 -->
+          <div class="faq__qna faq__qna--5">
+            <p class="question">Do you provide additional support?</p>
+            <div class="icon-arrow-down">
+              <img
+                src="./develop/images/icon-arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </div>
+            <p class="answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Daniel Arzanipour</a>.
     </div>
   </body>
 </html>
