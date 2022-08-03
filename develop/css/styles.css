@@ -130,6 +130,10 @@ body {
   font-weight: var(--fw-bold);
 }
 
+.active--down-arrow {
+  transform: rotate(180deg);
+}
+
 /**------------------- 
 **       FAQ
 --------------------*/
@@ -144,18 +148,18 @@ body {
 /* images */
 .faq__image-woman {
   position: absolute;
-  top: -89px;
-  left: 43px;
-  width: 200px;
-  height: 200px;
+  top: -5.5625rem;
+  left: 2.6875rem;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 .faq__image-shadow {
   position: absolute;
-  top: -111px;
-  left: 44px;
-  width: 200px;
-  height: 200px;
+  top: 0.063rem;
+  left: 2.75rem;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 /* header */
@@ -167,8 +171,6 @@ body {
 }
 
 /* questions and answers */
-.faq__qna-box {
-}
 
 .faq__qna {
   display: flex;
@@ -183,17 +185,20 @@ body {
   position: relative;
 }
 
-.wrapper {
-}
-
 .question {
   color: hsl(var(--clr-dark-grayish-blue));
+}
+
+.question:hover {
+  color: hsl(var(--clr-soft-red));
 }
 
 .icon-arrow-down {
   position: absolute;
   top: 0.4375rem;
   right: 0;
+
+  transition: all 0.2s;
 }
 
 .answer {
