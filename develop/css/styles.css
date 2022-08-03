@@ -69,36 +69,101 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
+  /* COLORS */
+  --clr-dark-blue: 238, 29%, 16%;
+  --clr-soft-red: 14, 88%, 65%;
+
+  --clr-soft-violet: 273, 75%, 66%;
+  --clr-soft-blue: 240, 73%, 65%;
+
+  --clr-dark-grayish-blue: 240, 6%, 50%;
+  --clr-very-dark-grayish-blue: 237, 12%, 33%;
+  --clr-light-grayish-blue: 240, 5%, 91%;
+
+  /* FONT FAMILIES */
+  --ff-kumbh-sans: 'Kumbh Sans', sans-serif;
+
+  /* FONT SIZES */
+  --fs-default: 0.75rem;
+
+  /* FONT WEIGHTS */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* BREAKPOINTS */
+  --bp-mobile: 23.4375em;
+  --bp-tablet: 48em;
+  --bp-desktop: 90em;
 }
 
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(var(--clr-soft-violet)),
+    hsl(var(--clr-soft-blue))
+  );
+  font-family: var(--ff-kumbh-sans);
+  font-size: var(--fs-default);
 }
 
 .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
 }
 
 /**------------------- 
 **    UTILITIES
 --------------------*/
+.hidden {
+  display: none !important;
+}
+
+.active--question {
+  color: hsl(var(--clr-very-dark-grayish-blue));
+  font-weight: var(--fw-bold);
+}
 
 /**------------------- 
 **       FAQ
 --------------------*/
 .faq {
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 6.25rem 1.25rem 2.5rem;
+  position: relative;
+  width: var(--bp-mobile);
 }
 
 /* images */
 .faq__image-woman {
+  position: absolute;
+  top: -89px;
+  left: 43px;
+  width: 200px;
+  height: 200px;
 }
 
 .faq__image-shadow {
+  position: absolute;
+  top: -111px;
+  left: 44px;
+  width: 200px;
+  height: 200px;
 }
 
 /* header */
 .faq__header {
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* questions and answers */
@@ -106,13 +171,31 @@ body {
 }
 
 .faq__qna {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+
+  border-bottom: 1px solid hsl(var(--clr-light-grayish-blue));
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+  position: relative;
+}
+
+.wrapper {
 }
 
 .question {
+  color: hsl(var(--clr-dark-grayish-blue));
 }
 
 .icon-arrow-down {
+  position: absolute;
+  top: 0.4375rem;
+  right: 0;
 }
 
 .answer {
+  color: hsl(var(--clr-dark-grayish-blue));
 }
