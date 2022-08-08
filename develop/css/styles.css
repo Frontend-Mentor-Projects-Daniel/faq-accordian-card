@@ -175,20 +175,20 @@ body {
 
 @media only screen and (min-width: 48em) {
   .faq__image-woman {
-    top: 3.6875rem;
+    /* top: 3.6875rem;
     left: -3.5rem;
 
-    width: 24rem;
+    width: 24rem; */
+
+    top: 0;
+    left: 0;
+    position: relative;
+    transform: translateX(-25%);
+    width: auto;
   }
 }
 
-@media only screen and (min-width: 90em) {
-  .faq__image-woman {
-    top: 2.688rem;
-    left: -5.2rem;
-
-    width: 29rem;
-  }
+.faq__image-box {
 }
 
 .faq__image-shadow {
@@ -200,19 +200,16 @@ body {
 
 @media only screen and (min-width: 48em) {
   .faq__image-shadow {
-    top: -10.5rem;
-    left: -22.0625rem;
-
-    width: 42rem;
+    top: 0;
+    left: 0;
+    transform: translate(-63%, -25%);
+    width: auto;
   }
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 90em) {
   .faq__image-shadow {
-    top: -8.5rem;
-    left: -19.062rem;
-
-    width: 42rem;
+    transform: translate(-63%, -30%);
   }
 }
 
@@ -220,6 +217,7 @@ body {
 @media only screen and (min-width: 48em) {
   .faq__content {
     grid-column: 2 / 3;
+    grid-row: 1 / 1;
   }
 }
 
