@@ -137,9 +137,15 @@ body {
 /**------------------- 
 **       FAQ
 --------------------*/
+
+.box-controller {
+  position: relative;
+}
+
 .faq {
   background-color: white;
   border-radius: 1.25rem;
+  box-shadow: -3px 12px 9px 0px rgba(0, 0, 0, 0.2);
   padding: 6.25rem 1.25rem 2.5rem;
   position: relative;
   width: var(--bp-mobile);
@@ -175,20 +181,26 @@ body {
 
 @media only screen and (min-width: 48em) {
   .faq__image-woman {
-    /* top: 3.6875rem;
-    left: -3.5rem;
-
-    width: 24rem; */
-
     top: 0;
     left: 0;
-    position: relative;
-    transform: translateX(-25%);
+    position: static;
+    transform: translateX(-23%);
     width: auto;
   }
 }
 
-.faq__image-box {
+@media only screen and (min-width: 48em) {
+  .faq__image-box {
+    position: absolute;
+    top: 173px;
+    left: -104px;
+    z-index: 12;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .faq__image-box {
+    top: 237px;
+  }
 }
 
 .faq__image-shadow {
@@ -262,6 +274,7 @@ body {
 }
 
 .wrapper {
+  cursor: pointer;
   background-color: transparent;
   border: none;
 }

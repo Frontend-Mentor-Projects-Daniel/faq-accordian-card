@@ -39,137 +39,141 @@
   </head>
   <body>
     <main class="main">
-      <div class="faq">
-        <!-- image of woman -->
-        <div class="faq__image-woman">
-          <picture>
-            <source
-              srcset="./develop/images/illustration-woman-online-desktop.svg"
-              media="(min-width: 48em)"
-            />
-            <source
-              srcset="./develop/images/illustration-woman-online-mobile.svg"
-              media="(min-width: 23.4375em)"
-            />
-            <img
-              src="./develop/images/illustration-woman-online-mobile.svg"
-              alt="illustration of a woman working online"
-            />
-          </picture>
-        </div>
-
+      <!-- in order for the orange box to be able to be positioned properly and not be cut off by the overflow: hidden on faq, box-controller was created -->
+      <div class="box-controller">
         <!-- image of orange box -->
         <div class="faq__image-box">
           <img
             src="./develop/images/illustration-box-desktop.svg"
             alt="illustration of an orange box"
             class="hidden"
+            data-image-box
           />
         </div>
+        <div class="faq">
+          <!-- image of woman -->
+          <div class="faq__image-woman">
+            <picture>
+              <source
+                srcset="./develop/images/illustration-woman-online-desktop.svg"
+                media="(min-width: 48em)"
+              />
+              <source
+                srcset="./develop/images/illustration-woman-online-mobile.svg"
+                media="(min-width: 23.4375em)"
+              />
+              <img
+                src="./develop/images/illustration-woman-online-mobile.svg"
+                alt="illustration of a woman working online"
+              />
+            </picture>
+          </div>
 
-        <!-- image of bg shadow -->
-        <div class="faq__image-shadow">
-          <picture>
-            <source
-              srcset="./develop/images/bg-pattern-desktop.svg"
-              media="(min-width: 48em)"
-            />
-            <source
-              srcset="./develop/images/bg-pattern-mobile.svg"
-              media="(min-width: 23.4375em)"
-            />
-            <img
-              src="./develop/images/bg-pattern-mobile.svg"
-              alt="illustration of a woman working online"
-            />
-          </picture>
-        </div>
+          <!-- image of bg shadow -->
+          <div class="faq__image-shadow">
+            <picture>
+              <source
+                srcset="./develop/images/bg-pattern-desktop.svg"
+                media="(min-width: 48em)"
+              />
+              <source
+                srcset="./develop/images/bg-pattern-mobile.svg"
+                media="(min-width: 23.4375em)"
+              />
+              <img
+                src="./develop/images/bg-pattern-mobile.svg"
+                alt="illustration of a woman working online"
+              />
+            </picture>
+          </div>
 
-        <div class="faq__content">
-          <!-- header -->
-          <h1 class="faq__header">FAQ</h1>
+          <div class="faq__content">
+            <!-- header -->
+            <h1 class="faq__header">FAQ</h1>
 
-          <!-- questions & answers -->
-          <div class="faq__qna-box">
-            <!-- question 1 -->
-            <div class="faq__qna faq__qna--1">
-              <button class="wrapper">
-                <p class="question">How many team members can I invite?</p>
-                <div class="icon-arrow-down">
-                  <img
-                    src="./develop/images/icon-arrow-down.svg"
-                    alt="arrow down icon"
-                  />
-                </div>
-              </button>
-              <p class="answer hidden">
-                You can invite up to 2 additional users on the Free plan. There
-                is no limit on team members for the Premium plan.
-              </p>
-            </div>
-            <!-- question 2 -->
-            <div class="faq__qna faq__qna--2">
-              <button class="wrapper">
-                <p class="question">What is the maximum file upload size?</p>
-                <div class="icon-arrow-down">
-                  <img
-                    src="./develop/images/icon-arrow-down.svg"
-                    alt="arrow down icon"
-                  />
-                </div>
-              </button>
-              <p class="answer hidden">
-                No more than 2GB. All files in your account must fit your
-                allotted storage space..
-              </p>
-            </div>
-            <!-- question 3 -->
-            <div class="faq__qna faq__qna--3">
-              <button class="wrapper">
-                <p class="question">How do I reset my password?</p>
-                <div class="icon-arrow-down">
-                  <img
-                    src="./develop/images/icon-arrow-down.svg"
-                    alt="arrow down icon"
-                  />
-                </div>
-              </button>
-              <p class="answer hidden">
-                Click “Forgot password” from the login page or “Change password”
-                from your profile page. A reset link will be emailed to you.
-              </p>
-            </div>
-            <!-- question 4 -->
-            <div class="faq__qna faq__qna--4">
-              <button class="wrapper">
-                <p class="question">Can I cancel my subscription?</p>
-                <div class="icon-arrow-down">
-                  <img
-                    src="./develop/images/icon-arrow-down.svg"
-                    alt="arrow down icon"
-                  />
-                </div>
-              </button>
-              <p class="answer hidden">
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </p>
-            </div>
-            <!-- question 5 -->
-            <div class="faq__qna faq__qna--5">
-              <button class="wrapper">
-                <p class="question">Do you provide additional support?</p>
-                <div class="icon-arrow-down">
-                  <img
-                    src="./develop/images/icon-arrow-down.svg"
-                    alt="arrow down icon"
-                  />
-                </div>
-              </button>
-              <p class="answer hidden">
-                Chat and email support is available 24/7. Phone lines are open
-                during normal business hours.
-              </p>
+            <!-- questions & answers -->
+            <div class="faq__qna-box">
+              <!-- question 1 -->
+              <div class="faq__qna faq__qna--1">
+                <button class="wrapper">
+                  <p class="question">How many team members can I invite?</p>
+                  <div class="icon-arrow-down">
+                    <img
+                      src="./develop/images/icon-arrow-down.svg"
+                      alt="arrow down icon"
+                    />
+                  </div>
+                </button>
+                <p class="answer hidden">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+              <!-- question 2 -->
+              <div class="faq__qna faq__qna--2">
+                <button class="wrapper">
+                  <p class="question">What is the maximum file upload size?</p>
+                  <div class="icon-arrow-down">
+                    <img
+                      src="./develop/images/icon-arrow-down.svg"
+                      alt="arrow down icon"
+                    />
+                  </div>
+                </button>
+                <p class="answer hidden">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space..
+                </p>
+              </div>
+              <!-- question 3 -->
+              <div class="faq__qna faq__qna--3">
+                <button class="wrapper">
+                  <p class="question">How do I reset my password?</p>
+                  <div class="icon-arrow-down">
+                    <img
+                      src="./develop/images/icon-arrow-down.svg"
+                      alt="arrow down icon"
+                    />
+                  </div>
+                </button>
+                <p class="answer hidden">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+              <!-- question 4 -->
+              <div class="faq__qna faq__qna--4">
+                <button class="wrapper">
+                  <p class="question">Can I cancel my subscription?</p>
+                  <div class="icon-arrow-down">
+                    <img
+                      src="./develop/images/icon-arrow-down.svg"
+                      alt="arrow down icon"
+                    />
+                  </div>
+                </button>
+                <p class="answer hidden">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </div>
+              <!-- question 5 -->
+              <div class="faq__qna faq__qna--5">
+                <button class="wrapper">
+                  <p class="question">Do you provide additional support?</p>
+                  <div class="icon-arrow-down">
+                    <img
+                      src="./develop/images/icon-arrow-down.svg"
+                      alt="arrow down icon"
+                    />
+                  </div>
+                </button>
+                <p class="answer hidden">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </div>
             </div>
           </div>
         </div>
