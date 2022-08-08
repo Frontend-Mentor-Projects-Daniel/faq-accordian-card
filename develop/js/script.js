@@ -17,10 +17,7 @@ const handleClickFAQ = (e) => {
   answer.classList.toggle('hidden');
 };
 
-faqQuestionBox.forEach((question) => {
-  question.addEventListener('click', handleClickFAQ);
-});
-
+// have orange box show on tablet screen size and larger
 const observer = new ResizeObserver((entries) => {
   const bodyElement = entries[0];
   const tabletScreenSize = bodyElement.contentRect.width >= 768;
@@ -31,3 +28,19 @@ const observer = new ResizeObserver((entries) => {
 });
 
 observer.observe(body);
+
+// have answer show up when question or icon are clicked
+faqQuestionBox.forEach((question) => {
+  question.addEventListener('click', handleClickFAQ);
+});
+
+// have question 2 be displayed to its active state by default
+faqQuestionBox[1].firstElementChild.firstElementChild.classList.add(
+  'active--question'
+);
+faqQuestionBox[1].firstElementChild.firstElementChild.nextElementSibling.classList.add(
+  'active--down-arrow'
+);
+faqQuestionBox[1].firstElementChild.nextElementSibling.classList.remove(
+  'hidden'
+);
