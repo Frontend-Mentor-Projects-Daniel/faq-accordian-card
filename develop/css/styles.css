@@ -156,15 +156,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    min-height: 26.188rem;
     overflow: hidden;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
     width: var(--bp-tablet);
   }
 }
 
 @media only screen and (min-width: 90em) {
   .faq {
-    min-height: 29.188rem;
     width: 62.5rem;
   }
 }
@@ -192,14 +192,14 @@ body {
 @media only screen and (min-width: 48em) {
   .faq__image-box {
     position: absolute;
-    top: 173px;
+    top: 123px;
     left: -104px;
     z-index: 12;
   }
 }
 @media only screen and (min-width: 90em) {
   .faq__image-box {
-    top: 237px;
+    top: 188px;
   }
 }
 
