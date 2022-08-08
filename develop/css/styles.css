@@ -147,6 +147,9 @@ body {
 
 @media only screen and (min-width: 48em) {
   .faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     min-height: 26.188rem;
     overflow: hidden;
     width: var(--bp-tablet);
@@ -216,20 +219,7 @@ body {
 /* faq content */
 @media only screen and (min-width: 48em) {
   .faq__content {
-    position: absolute;
-    top: 1.75rem;
-    right: 5.3125rem;
-
-    width: 15.625rem;
-  }
-}
-
-@media only screen and (min-width: 90em) {
-  .faq__content {
-    top: 28px;
-    right: 154px;
-
-    width: 400px;
+    grid-column: 2 / 3;
   }
 }
 
@@ -271,6 +261,11 @@ body {
   .faq__qna {
     min-width: 18.75rem;
   }
+}
+
+.wrapper {
+  background-color: transparent;
+  border: none;
 }
 
 .question {
